@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Varun Maurya - Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body {
+      display: flex;
+      background: linear-gradient(135deg, #007bff, #ffeb3b, #ff3b3b);
+      color: white;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Left Sidebar */
+    .sidebar {
+      width: 260px;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(0,0,0,0.4);
+      padding: 30px 20px;
+      text-align: center;
+      backdrop-filter: blur(6px);
+    }
+
+    .sidebar img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 15px;
+    }
+
+    .sidebar h1 { font-size: 22px; font-weight: 700; margin-bottom: 5px; }
+    .sidebar p { font-size: 14px; opacity: 0.85; margin-bottom: 15px; }
+
+    .btn {
+      display: block;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      font-size: 13px;
+      margin: 5px 0;
+    }
+    .btn:hover { background: #0056b3; }
+
+    /* Main Content Section */
+    .content {
+      margin-left: 260px;
+      padding: 40px;
+      width: calc(100% - 260px);
+    }
+
+    section {
+      padding: 30px;
+      border-radius: 12px;
+      margin-bottom: 25px;
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(4px);
+      color: #fff;
+    }
+
+    h2 { font-size: 22px; font-weight: 700; margin-bottom: 10px; }
+    p, li { font-size: 14px; line-height: 1.5; }
+    ul { margin-left: 20px; }
+    a { color: #fff; text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<!-- LEFT SIDEBAR -->
+<div class="sidebar">
+  <img src="profile.jpg.jpg" alt="Varun Maurya">
+  <h1>Varun Maurya</h1>
+  <p>Data Analyst</p>
+
+  <a class="btn" href="Varun_Maurya_Resume.pdf.pdf" download>📄 Download Resume</a>
+  <a class="btn" href="https://www.linkedin.com/in/varun-maurya-913444331/" target="_blank">🔗 LinkedIn</a>
+
+  <p style="margin-top:15px; font-size:12px; opacity:0.8;">
+    📍 Delhi / UP, India<br>
+    📞 +91 8726907810<br>
+    ✉️ mauryavarun016@gmail.com
+  </p>
+</div>
+
+<!-- RIGHT MAIN CONTENT -->
+<div class="content">
+
+  <!-- OBJECTIVE SECTION -->
+  <section>
+    <h2>🎯 Objective</h2>
+    <p>
+      Highly motivated Data Analytics professional skilled in transforming raw datasets into meaningful insights
+      using tools like Power BI, Python and Excel. Known for problem-solving, quick learning and attention to
+      detail, I aim to leverage data-driven decision making to improve business outcomes and support organizational growth.
+    </p>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section>
+    <h2>📌 Projects</h2>
+    <ul>
+      <li>
+        <b>HR Attrition Analysis Dashboard (Power BI)</b><br>
+        Designed an interactive dashboard to analyze employee attrition trends using DAX, data modeling, and Power Query.<br>
+        • Identified key metrics like Attrition Rate, Age Group Impact, Education & Quit Ratio.<br>
+        • Implemented dynamic slicers and drill-through for department-wise insights.<br>
+        • Helped HR make data-backed retention strategies.<br>
+        <a href="https://www.linkedin.com/posts/varun-maurya-913444331_hr-attrition-analysis-dashboard-power-bi-activity-7369401784127135745-bcDQ" target="_blank">🔗 View Project</a>
+      </li>
+      <br>
+      <li>
+        <b>Sachin Tendulkar ODI Career Analysis</b><br>
+        Collected match-wise career data, cleaned missing values (DNB, TDNB) using Python.<br>
+        • Calculated total runs, averages, strike rate, centuries & consistency ratio.<br>
+        • Visualized year-wise performance using Matplotlib & Seaborn.<br>
+        • Derived insights like peak scoring phase & toughest opposition.<br>
+      </li>
+      <br>
+      <li>
+        <b>Supreme Court Judges Web Scraper</b><br>
+        Built a Python scraper using Requests + BeautifulSoup to extract judges data.<br>
+        • Parsed HTML, removed noise, cleaned formatting using Pandas.<br>
+        • Exported structured CSV for legal research usage.<br>
+      </li>
+    </ul>
+  </section>
+  <!-- SKILLS SECTION -->
+  <section>
+    <h2>🛠 Technical Skills</h2>
+    <ul>
+      <li>Python | Pandas | NumPy | Matplotlib | Seaborn</li>
+      <li>Power BI | DAX | Power Query</li>
+      <li>Excel (Pivot Tables, VLOOKUP, Dashboarding)</li>
+      <li>SQL | Web Scraping | CSV/JSON Automation</li>
+      <li>Data Cleaning | ETL | Reporting</li>
+    </ul>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section>
+    <h2>🎓 Education</h2>
+    <ul>
+      <li><b>Bachelor of Arts</b> – Dr. Ram Manohar Lohia Awadh University (75%)</li>
+      <!-- Add More if needed -->
+    </ul>
+  </section>
+
+  <!-- CERTIFICATIONS SECTION -->
+  <section>
+    <h2>📜 Certifications</h2>
+    <ul>
+      <li>Power BI - Office Master  
+        <a href="#" target="_blank">🔗 View Certificate</a>
+      </li>
+      <li>Data Science - Ducat School of AI  
+        <a href="#" target="_blank">🔗 View Certificate</a>
+      </li>
+    </ul>
+  </section>
+
+  <!-- EXTRAS SECTION -->
+  <section>
+    <h2>💡 Soft Skills & Interests</h2>
+    <p><b>Soft Skills:</b> Problem Solving, Quick Learner, Team Collaboration, Critical Thinking, Attention to Detail</p>
+    <p><b>Languages:</b> Hindi (Native), English (Professional)</p>
+    <p><b>Interests:</b> Cricket, Stock Market, Tech Learning, Travelling</p>
+  </section>
+
+</div> <!-- END CONTENT -->
+
+</body>
+</html>
